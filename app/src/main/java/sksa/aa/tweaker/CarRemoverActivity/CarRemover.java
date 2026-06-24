@@ -107,9 +107,9 @@ public class CarRemover extends AppCompatActivity {
                 Map<String, ?> allEntries = accountsPrefs.getAll();
 
                 for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
-                        finalCommand.append("DELETE FROM allowedcars WHERE vehicleidclient=\"");
+                        finalCommand.append("DELETE FROM allowedcars WHERE vehicleidclient='");
                         finalCommand.append(entry.getKey());
-                        finalCommand.append("\";");
+                        finalCommand.append("';");
                         finalCommand.append(System.getProperty("line.separator"));
                 }
 
